@@ -1,0 +1,99 @@
+.input_data {
+    background-color: #0b132b;
+    color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 10px 10px 25px #00000080;
+    text-align: center;
+}
+
+/* 通用样式，适用于所有设备 */
+.input_data input {
+    display: flex;
+    height: 25px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 22px;
+    outline: none;
+    color: #f8f9fa;
+}
+
+/* 媒体查询 - 在移动设备上设置宽度为300px */
+@media (max-width: 768px) {
+    .input_data input {
+        width: 300px;
+    }
+}
+
+/* 媒体查询 - 在电脑上设置宽度为600px */
+@media (min-width: 769px) {
+    .input_data input {
+        width: 600px;
+    }
+}
+
+
+tr {
+    text-align: center;
+    border: 1px solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+th {
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+
+    background-color: #6b675d;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid;
+    /* 文本垂直居中 */
+    width: 600px;
+    /* 设置标题单元格的宽度与列内容单元格相匹配 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid;
+    /* 文本水平居中 */
+    vertical-align: middle;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px #999;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
